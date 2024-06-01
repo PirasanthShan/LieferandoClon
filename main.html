@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lieferando</title>
+  <script src="script.js"></script>
+  <link rel="icon" type="image/gif" href="logo/burger.webp">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body onload="includeHTML(), showMenu()">
+  <div w3-include-html="templates/header.html"></div>
+  
+
+
+  <div class="content">
+   
+  <div class="left">
+    
+      <div class="imgContainer">
+        <img class="mainImg" src="img/kebap.webp" alt="">
+        <img class="logoImg" src="./logo/ResterauntLogo.webp" alt="">
+      </div>
+      <div class="infoContainer">
+        <h1>Borcelle Resteraunt</h1>
+      <div >
+        <img src="./logo/info.webp" alt="">
+        <img src="./logo/herz.webp" alt="">
+      </div>
+      </div>
+      <div class="ratingContainer">
+        <img src="./logo/rating.webp" alt="">
+        <p>4.1 (503)</p>
+      </div>
+      <div class="deliveryService">
+        <img src="./logo/shopingbag.webp" alt="">
+        <p>Min.10€</p>
+        <li></li>
+        <img src="./logo/kostenlos.webp" alt="">
+        <p style="color: green;">Kostenlos</p>
+      </div>
+      <div id="menubar" class="menubar">
+        <div class="menubar1">
+        <a href="#Burger">Burger</a>
+        <a href="#Pizza">Pizza</a>
+        <a href="#Salat">Salat</a>
+        <span class ="hiddenOrder" onclick="renderBasket()">Warenkorb</span>
+        </div>
+      </div>
+    
+      <div id="FullSize" class="d-none">
+        <div id="WarenkorbContainer" class="bestellungsContainer">
+         <div class="WarenkorbContainer">
+          <div class="warenkorbContainer2">
+            <h2>Warenkorb</h2>
+            </div>
+            <div>
+            <div id="bestellContainer"></div>  
+            <div id="totalcost1"></div>  
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <div id="Burger" class="menuImgContainer"><img src="/img/burger.webp" alt=""></div>
+      <div id="menuCard"></div>
+      <div id="Pizza" class="menuImgContainer"><img src="/img/pizza.webp" alt=""></div>
+      <div id="menuCard2"></div>
+      <div id="Salat" class="menuImgContainer"><img src="/img/salat.webp" alt=""></div>
+      <div id="menuCard3"></div>
+   
+      
+  </div>
+    
+    <div id="right" class="right">
+      
+      <div class="warenkorbContainer">
+        <h1>Warenkorb</h1>
+      </div>
+      <div id="addBasket">
+        <div id="displayBasket">
+          <div id="Fill-Warenkorb" class="fillWarenkorb">
+            <img src="./logo/shopingcart.webp" alt="">
+            <h2>Fülle deinen Warenkorb</h2>
+            <p>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</p>
+          </div>`
+          </div> 
+        </div>
+       <div id="totalcost"></div>
+    
+    </div>
+  
+  </div>
+
+
+<div w3-include-html="templates/footer.html"></div>
+<body>
+</html>
